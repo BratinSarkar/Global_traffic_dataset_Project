@@ -1,0 +1,446 @@
+<!DOCTYPE html>
+<html>
+<head>
+    
+    <meta http-equiv="content-type" content="text/html; charset=UTF-8" />
+    
+        <script>
+            L_NO_TOUCH = false;
+            L_DISABLE_3D = false;
+        </script>
+    
+    <style>html, body {width: 100%;height: 100%;margin: 0;padding: 0;}</style>
+    <style>#map {position:absolute;top:0;bottom:0;right:0;left:0;}</style>
+    <script src="https://cdn.jsdelivr.net/npm/leaflet@1.9.3/dist/leaflet.js"></script>
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.js"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/leaflet@1.9.3/dist/leaflet.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css"/>
+    <link rel="stylesheet" href="https://netdna.bootstrapcdn.com/bootstrap/3.0.0/css/bootstrap-glyphicons.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.2.0/css/all.min.css"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/python-visualization/folium/folium/templates/leaflet.awesome.rotate.min.css"/>
+    
+            <meta name="viewport" content="width=device-width,
+                initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+            <style>
+                #map_c7471b8e6626c9261781316c4d59ea46 {
+                    position: relative;
+                    width: 100.0%;
+                    height: 100.0%;
+                    left: 0.0%;
+                    top: 0.0%;
+                }
+                .leaflet-container { font-size: 1rem; }
+            </style>
+        
+</head>
+<body>
+    
+    
+            <div class="folium-map" id="map_c7471b8e6626c9261781316c4d59ea46" ></div>
+        
+</body>
+<script>
+    
+    
+            var map_c7471b8e6626c9261781316c4d59ea46 = L.map(
+                "map_c7471b8e6626c9261781316c4d59ea46",
+                {
+                    center: [20.0, 0.0],
+                    crs: L.CRS.EPSG3857,
+                    ...{
+  "zoom": 2,
+  "zoomControl": true,
+  "preferCanvas": false,
+}
+
+                }
+            );
+
+            
+
+        
+    
+            var tile_layer_f051cb11be7c67856ce9115d93d72873 = L.tileLayer(
+                "https://tile.openstreetmap.org/{z}/{x}/{y}.png",
+                {
+  "minZoom": 0,
+  "maxZoom": 19,
+  "maxNativeZoom": 19,
+  "noWrap": false,
+  "attribution": "\u0026copy; \u003ca href=\"https://www.openstreetmap.org/copyright\"\u003eOpenStreetMap\u003c/a\u003e contributors",
+  "subdomains": "abc",
+  "detectRetina": false,
+  "tms": false,
+  "opacity": 1,
+}
+
+            );
+        
+    
+            tile_layer_f051cb11be7c67856ce9115d93d72873.addTo(map_c7471b8e6626c9261781316c4d59ea46);
+        
+    
+            var marker_f47c1f3cbe7d7722176e33d2ceacefb4 = L.marker(
+                [39.9042, 116.4074],
+                {
+}
+            ).addTo(map_c7471b8e6626c9261781316c4d59ea46);
+        
+    
+            var icon_37fd221fc38a985a185714c959e93a9a = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "red",
+  "iconColor": "white",
+  "icon": "info-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+            marker_f47c1f3cbe7d7722176e33d2ceacefb4.setIcon(icon_37fd221fc38a985a185714c959e93a9a);
+        
+    
+        var popup_258fdb464105fe6945a08e26f694275b = L.popup({
+  "maxWidth": 400,
+});
+
+        
+            
+                var html_53f78dea1f515a1053283c69af58f78f = $(`<div id="html_53f78dea1f515a1053283c69af58f78f" style="width: 100.0%; height: 100.0%;"><b>City:</b> Beijing, China<br><b>Vehicles Involved:</b> 3000<br><b>Casualties:</b> 5233<br><b>Causes:</b> Drunk Driving: 200, Speeding: 174, Weather Conditions: 166, Distracted Driving: 164, Mechanical Failure: 161, Reckless Driving: 149</div>`)[0];
+                popup_258fdb464105fe6945a08e26f694275b.setContent(html_53f78dea1f515a1053283c69af58f78f);
+            
+        
+
+        marker_f47c1f3cbe7d7722176e33d2ceacefb4.bindPopup(popup_258fdb464105fe6945a08e26f694275b)
+        ;
+
+        
+    
+    
+            var marker_25b087c93728ff8a433cd12508a78aad = L.marker(
+                [52.52, 13.405],
+                {
+}
+            ).addTo(map_c7471b8e6626c9261781316c4d59ea46);
+        
+    
+            var icon_b767d9a3c907939268e9f930ab813669 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "red",
+  "iconColor": "white",
+  "icon": "info-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+            marker_25b087c93728ff8a433cd12508a78aad.setIcon(icon_b767d9a3c907939268e9f930ab813669);
+        
+    
+        var popup_3d60678e2ddb216bd7577e0bee317999 = L.popup({
+  "maxWidth": 400,
+});
+
+        
+            
+                var html_9266c39d3cdc1f476ec5e06c5015f42c = $(`<div id="html_9266c39d3cdc1f476ec5e06c5015f42c" style="width: 100.0%; height: 100.0%;"><b>City:</b> Berlin, Germany<br><b>Vehicles Involved:</b> 2961<br><b>Casualties:</b> 4827<br><b>Causes:</b> Reckless Driving: 173, Distracted Driving: 172, Mechanical Failure: 168, Speeding: 150, Weather Conditions: 149, Drunk Driving: 146</div>`)[0];
+                popup_3d60678e2ddb216bd7577e0bee317999.setContent(html_9266c39d3cdc1f476ec5e06c5015f42c);
+            
+        
+
+        marker_25b087c93728ff8a433cd12508a78aad.bindPopup(popup_3d60678e2ddb216bd7577e0bee317999)
+        ;
+
+        
+    
+    
+            var marker_c5ee148f3ac0a195631c34761fe2c3d2 = L.marker(
+                [51.5074, -0.1278],
+                {
+}
+            ).addTo(map_c7471b8e6626c9261781316c4d59ea46);
+        
+    
+            var icon_2afdb3826f3505d9c355cafb0e289e1e = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "red",
+  "iconColor": "white",
+  "icon": "info-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+            marker_c5ee148f3ac0a195631c34761fe2c3d2.setIcon(icon_2afdb3826f3505d9c355cafb0e289e1e);
+        
+    
+        var popup_aa35e297141b37ae9f05b1e626118fde = L.popup({
+  "maxWidth": 400,
+});
+
+        
+            
+                var html_fc0945d981b820dea9b2daf3efd6a938 = $(`<div id="html_fc0945d981b820dea9b2daf3efd6a938" style="width: 100.0%; height: 100.0%;"><b>City:</b> London, UK<br><b>Vehicles Involved:</b> 2987<br><b>Casualties:</b> 4924<br><b>Causes:</b> Reckless Driving: 182, Speeding: 180, Drunk Driving: 166, Mechanical Failure: 164, Weather Conditions: 156, Distracted Driving: 152</div>`)[0];
+                popup_aa35e297141b37ae9f05b1e626118fde.setContent(html_fc0945d981b820dea9b2daf3efd6a938);
+            
+        
+
+        marker_c5ee148f3ac0a195631c34761fe2c3d2.bindPopup(popup_aa35e297141b37ae9f05b1e626118fde)
+        ;
+
+        
+    
+    
+            var marker_dc45cb2260fbe9094b7d5df0003bb0e7 = L.marker(
+                [19.076, 72.8777],
+                {
+}
+            ).addTo(map_c7471b8e6626c9261781316c4d59ea46);
+        
+    
+            var icon_e56a8a2e121700e1e142665f94123df6 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "red",
+  "iconColor": "white",
+  "icon": "info-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+            marker_dc45cb2260fbe9094b7d5df0003bb0e7.setIcon(icon_e56a8a2e121700e1e142665f94123df6);
+        
+    
+        var popup_c2269c2db9ce17bf0538aed46914d3d4 = L.popup({
+  "maxWidth": 400,
+});
+
+        
+            
+                var html_ea6b1a9587c7b50c02a9221bb414ccfa = $(`<div id="html_ea6b1a9587c7b50c02a9221bb414ccfa" style="width: 100.0%; height: 100.0%;"><b>City:</b> Mumbai, India<br><b>Vehicles Involved:</b> 3001<br><b>Casualties:</b> 4821<br><b>Causes:</b> Reckless Driving: 180, Weather Conditions: 165, Mechanical Failure: 165, Drunk Driving: 162, Distracted Driving: 158, Speeding: 157</div>`)[0];
+                popup_c2269c2db9ce17bf0538aed46914d3d4.setContent(html_ea6b1a9587c7b50c02a9221bb414ccfa);
+            
+        
+
+        marker_dc45cb2260fbe9094b7d5df0003bb0e7.bindPopup(popup_c2269c2db9ce17bf0538aed46914d3d4)
+        ;
+
+        
+    
+    
+            var marker_08bae12a86e5802961fb39a6f1f40a3c = L.marker(
+                [40.7128, -74.006],
+                {
+}
+            ).addTo(map_c7471b8e6626c9261781316c4d59ea46);
+        
+    
+            var icon_766de96852b15e973ade28b38bb8fe3e = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "red",
+  "iconColor": "white",
+  "icon": "info-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+            marker_08bae12a86e5802961fb39a6f1f40a3c.setIcon(icon_766de96852b15e973ade28b38bb8fe3e);
+        
+    
+        var popup_a60ec3711f7ac528141247045569183b = L.popup({
+  "maxWidth": 400,
+});
+
+        
+            
+                var html_f834e1b9b9d75a004363f4f763715152 = $(`<div id="html_f834e1b9b9d75a004363f4f763715152" style="width: 100.0%; height: 100.0%;"><b>City:</b> New York, USA<br><b>Vehicles Involved:</b> 3060<br><b>Casualties:</b> 4992<br><b>Causes:</b> Weather Conditions: 181, Speeding: 180, Distracted Driving: 174, Mechanical Failure: 171, Drunk Driving: 167, Reckless Driving: 143</div>`)[0];
+                popup_a60ec3711f7ac528141247045569183b.setContent(html_f834e1b9b9d75a004363f4f763715152);
+            
+        
+
+        marker_08bae12a86e5802961fb39a6f1f40a3c.bindPopup(popup_a60ec3711f7ac528141247045569183b)
+        ;
+
+        
+    
+    
+            var marker_cd2b34c5e27a7954175f7f09d25f9805 = L.marker(
+                [48.8566, 2.3522],
+                {
+}
+            ).addTo(map_c7471b8e6626c9261781316c4d59ea46);
+        
+    
+            var icon_b82cb19114b3e343f1ac47295a039340 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "red",
+  "iconColor": "white",
+  "icon": "info-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+            marker_cd2b34c5e27a7954175f7f09d25f9805.setIcon(icon_b82cb19114b3e343f1ac47295a039340);
+        
+    
+        var popup_8a1c07ddc536a9c5f1b5588c644bc0e8 = L.popup({
+  "maxWidth": 400,
+});
+
+        
+            
+                var html_3a58763d440f783fe3c78af2a51fef05 = $(`<div id="html_3a58763d440f783fe3c78af2a51fef05" style="width: 100.0%; height: 100.0%;"><b>City:</b> Paris, France<br><b>Vehicles Involved:</b> 2953<br><b>Casualties:</b> 5004<br><b>Causes:</b> Speeding: 182, Reckless Driving: 170, Weather Conditions: 165, Drunk Driving: 163, Distracted Driving: 162, Mechanical Failure: 153</div>`)[0];
+                popup_8a1c07ddc536a9c5f1b5588c644bc0e8.setContent(html_3a58763d440f783fe3c78af2a51fef05);
+            
+        
+
+        marker_cd2b34c5e27a7954175f7f09d25f9805.bindPopup(popup_8a1c07ddc536a9c5f1b5588c644bc0e8)
+        ;
+
+        
+    
+    
+            var marker_1aa1ec1a70531c8ba80622d9aa17f76a = L.marker(
+                [-33.8688, 151.2093],
+                {
+}
+            ).addTo(map_c7471b8e6626c9261781316c4d59ea46);
+        
+    
+            var icon_9a5d94ccf626abb4effa08c5dd9ad6b0 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "red",
+  "iconColor": "white",
+  "icon": "info-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+            marker_1aa1ec1a70531c8ba80622d9aa17f76a.setIcon(icon_9a5d94ccf626abb4effa08c5dd9ad6b0);
+        
+    
+        var popup_cdb3b19f2b2a681767fbad64852de028 = L.popup({
+  "maxWidth": 400,
+});
+
+        
+            
+                var html_6df4d91971b442cc34b39b6cd66e4674 = $(`<div id="html_6df4d91971b442cc34b39b6cd66e4674" style="width: 100.0%; height: 100.0%;"><b>City:</b> Sydney, Australia<br><b>Vehicles Involved:</b> 3024<br><b>Casualties:</b> 4937<br><b>Causes:</b> Speeding: 180, Drunk Driving: 174, Weather Conditions: 172, Mechanical Failure: 170, Reckless Driving: 165, Distracted Driving: 145</div>`)[0];
+                popup_cdb3b19f2b2a681767fbad64852de028.setContent(html_6df4d91971b442cc34b39b6cd66e4674);
+            
+        
+
+        marker_1aa1ec1a70531c8ba80622d9aa17f76a.bindPopup(popup_cdb3b19f2b2a681767fbad64852de028)
+        ;
+
+        
+    
+    
+            var marker_4908745b0e636f93dbe64fe058759eec = L.marker(
+                [-23.5505, -46.6333],
+                {
+}
+            ).addTo(map_c7471b8e6626c9261781316c4d59ea46);
+        
+    
+            var icon_ed6ecbafff142b1ab281395f4e20f6a4 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "red",
+  "iconColor": "white",
+  "icon": "info-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+            marker_4908745b0e636f93dbe64fe058759eec.setIcon(icon_ed6ecbafff142b1ab281395f4e20f6a4);
+        
+    
+        var popup_bf9699b6b6122ed0d3e569acc9a57821 = L.popup({
+  "maxWidth": 400,
+});
+
+        
+            
+                var html_4e52066661d7f65a9f1fd1670b8456a1 = $(`<div id="html_4e52066661d7f65a9f1fd1670b8456a1" style="width: 100.0%; height: 100.0%;"><b>City:</b> São Paulo, Brazil<br><b>Vehicles Involved:</b> 3062<br><b>Casualties:</b> 5124<br><b>Causes:</b> Distracted Driving: 186, Drunk Driving: 183, Reckless Driving: 168, Mechanical Failure: 167, Weather Conditions: 165, Speeding: 163</div>`)[0];
+                popup_bf9699b6b6122ed0d3e569acc9a57821.setContent(html_4e52066661d7f65a9f1fd1670b8456a1);
+            
+        
+
+        marker_4908745b0e636f93dbe64fe058759eec.bindPopup(popup_bf9699b6b6122ed0d3e569acc9a57821)
+        ;
+
+        
+    
+    
+            var marker_f57b331027ab5d426deca0d465a4ec81 = L.marker(
+                [35.6895, 139.6917],
+                {
+}
+            ).addTo(map_c7471b8e6626c9261781316c4d59ea46);
+        
+    
+            var icon_2edf81a69b101bb5de34d86b23f014e9 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "red",
+  "iconColor": "white",
+  "icon": "info-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+            marker_f57b331027ab5d426deca0d465a4ec81.setIcon(icon_2edf81a69b101bb5de34d86b23f014e9);
+        
+    
+        var popup_bb437c3598eedc658966a4add808f49e = L.popup({
+  "maxWidth": 400,
+});
+
+        
+            
+                var html_4849bb62f9611db5cfcd8843d8b2965b = $(`<div id="html_4849bb62f9611db5cfcd8843d8b2965b" style="width: 100.0%; height: 100.0%;"><b>City:</b> Tokyo, Japan<br><b>Vehicles Involved:</b> 3011<br><b>Casualties:</b> 5017<br><b>Causes:</b> Reckless Driving: 179, Weather Conditions: 177, Drunk Driving: 159, Distracted Driving: 159, Mechanical Failure: 159, Speeding: 156</div>`)[0];
+                popup_bb437c3598eedc658966a4add808f49e.setContent(html_4849bb62f9611db5cfcd8843d8b2965b);
+            
+        
+
+        marker_f57b331027ab5d426deca0d465a4ec81.bindPopup(popup_bb437c3598eedc658966a4add808f49e)
+        ;
+
+        
+    
+    
+            var marker_ae937b83960c6f63debd5a3dbc51a161 = L.marker(
+                [43.651, -79.347],
+                {
+}
+            ).addTo(map_c7471b8e6626c9261781316c4d59ea46);
+        
+    
+            var icon_88eaee1f1e0746a6f15088330e30eeca = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "red",
+  "iconColor": "white",
+  "icon": "info-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+            marker_ae937b83960c6f63debd5a3dbc51a161.setIcon(icon_88eaee1f1e0746a6f15088330e30eeca);
+        
+    
+        var popup_d002ecb289241f614311dbfcdc9cd39c = L.popup({
+  "maxWidth": 400,
+});
+
+        
+            
+                var html_fbe2301d83d8f2f22ea23c360c4569e7 = $(`<div id="html_fbe2301d83d8f2f22ea23c360c4569e7" style="width: 100.0%; height: 100.0%;"><b>City:</b> Toronto, Canada<br><b>Vehicles Involved:</b> 2932<br><b>Casualties:</b> 5003<br><b>Causes:</b> Drunk Driving: 196, Reckless Driving: 176, Mechanical Failure: 175, Weather Conditions: 161, Distracted Driving: 161, Speeding: 134</div>`)[0];
+                popup_d002ecb289241f614311dbfcdc9cd39c.setContent(html_fbe2301d83d8f2f22ea23c360c4569e7);
+            
+        
+
+        marker_ae937b83960c6f63debd5a3dbc51a161.bindPopup(popup_d002ecb289241f614311dbfcdc9cd39c)
+        ;
+
+        
+    
+</script>
+</html>
